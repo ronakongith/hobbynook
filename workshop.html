@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobby Nook - Workshops</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="workshop.css" />
+</head>
+<body>
+
+ 
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Workshops</h1>
+      <p class="hero-subtitle">Pick a hobby, learn something new,<br>and make it yours! <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <div class="hero-banner" role="region" aria-label="Featured workshop images">
+      <img class="hero-slide active" src="sliding1.png" alt="" aria-hidden="false" />
+      <img class="hero-slide" src="sliding2.png" alt="" aria-hidden="true" />
+      <img class="hero-slide" src="sliding3.png" alt="" aria-hidden="true" />
+      <img class="hero-slide" src="sliding4.png" alt="" aria-hidden="true" />
+      <img class="hero-slide" src="sliding5.png" alt="" aria-hidden="true" />
+      <div class="hero-card-overlay">
+        <p>Small Steps Big Hobbies ♡</p>
+      </div>
+      <div class="hero-controls" aria-label="Image controls">
+        <button class="hero-arrow" type="button" aria-label="Show previous image">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="hero-dots">
+          <button class="hero-dot active" type="button" aria-label="Show image 1" aria-pressed="true"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 2" aria-pressed="false"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 3" aria-pressed="false"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 4" aria-pressed="false"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 5" aria-pressed="false"></button>
+        </div>
+        <button class="hero-arrow" type="button" aria-label="Show next image">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Location Bar -->
+  <section class="filter-section">
+    <div class="categories">
+      <button class="pill active"><i class="fa-solid fa-layer-group"></i> CREATIVITY</button>
+      <button class="pill"><i class="fa-solid fa-palette"></i> Art & Craft</button>
+      <button class="pill"><i class="fa-solid fa-scissors"></i> Baking</button>
+      <button class="pill"><i class="fa-solid fa-jar"></i>clay & Pottery</button>
+      <button class="pill"><i class="fa-solid fa-scroll"></i> Crochet</button>
+
+    </div>
+    <div class="location-dropdown">
+      <i class="fa-solid fa-location-dot"></i>
+      <select aria-label="Select a location">
+        <option value="indore" selected>Indore</option>
+        <option value="bhopal">Bhopal</option>
+        <option value="ujjain">Ujjain</option>
+      </select>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+  
+
+  <!-- Workshop Grid -->
+  <main class="grid-container">
+
+    <!-- Card 1: Crochet -->
+    <div class="card">
+      <div class="card-image">
+        <img src="crochet.png" alt="Crochet Basics">
+        <span class="badge"><i class="fa-solid fa-scissors"></i> Art &Craft</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Crochet Basics</h3>
+        <p class="desc">Learn the basics of crochet and create your first handmade piece!</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Kalakaksh Studio & Store, Scheme 140</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 12 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 3:00 PM – 5:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 10 seats</div>
+        <div class="card-footer">
+          <span class="price">₹ 499</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Card 2: Pottery -->
+    <div class="card">
+      <div class="card-image">
+        <img src="pottery.png" alt="Pottery">
+        <span class="badge"><i class="fa-solid fa-jar"></i> clay & Pottery</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Pottery for Beginners</h3>
+        <p class="desc">Get your hands dirty and shape your own clay creation.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Studio Folklore, Vijay Nagar</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 18 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 11:00 AM – 1:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 8 seats</div>
+        <div class="card-footer">
+          <span class="price">₹ 799</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+     <!-- Card 3: baking -->
+    <div class="card">
+      <div class="card-image">
+        <img src="baking.png" alt="Baking Workshop">
+        <span class="badge"><i class="fa-solid fa-scissors"></i> baking</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Baking Basics</h3>
+        <p class="desc">Learn baking techniques and create a delicious treat to take home.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Kalakaksh Studio & Store, Scheme 140</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 12 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 3:00 PM – 5:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 10 seats</div>
+        <div class="card-footer">
+          <span class="price">₹ 499</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4: Art& craft -->
+    <div class="card">
+      <div class="card-image">
+        <img src="art&craft.png" alt="Tote Bag Painting">
+        <span class="badge"><i class="fa-solid fa-scissors"></i> Art & Craft</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Art & craft</h3>
+        <p class="desc">Turn a simple tote bag into a work of art with fun and easy painting techniques.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Titli Store, Indore</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 20 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 3:00 PM – 5:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 10 seats</div>
+        <div class="card-footer">
+          <span class="price">₹ 699</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <br>
+
+  <!-- Filter & Location Bar -->
+  <section class="filter-section">
+    <div class="categories">
+      <button class="pill active"><i class="fa-solid fa-layer-group"></i> TECH</button>
+      <button class="pill"><i class="fa-solid fa-palette"></i> AI & ML</button>
+      <button class="pill"><i class="fa-solid fa-scissors"></i> Web Development</button>
+      <button class="pill"><i class="fa-solid fa-jar"></i> cybersecurity</button>
+      <button class="pill"><i class="fa-solid fa-laptop"></i> UI & UX</button>
+    </div>
+  </section>
+
+  <!-- Workshop Grid -->
+  <main class="grid-container">
+
+        <!-- Card 1: Web Development -->
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop" alt="Web Development">
+        <span class="badge"><i class="fa-solid fa-laptop-code"></i> Web Development</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Web Development Basics</h3>
+        <p class="desc">Learn HTML, CSS and JavaScript and create your first simple website.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Indore (Hobby Nook Studio)</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 12 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 4:00 PM – 6:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 12 seats</div>
+        <div class="card-footer">
+          <span class="price badge-green">₹ 499</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+        <!-- Card 2: Tech (New Addition) -->
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop" alt="Python Coding">
+        <span class="badge"><i class="fa-solid fa-laptop"></i> Tech</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>Python Coding Basics</h3>
+        <p class="desc">Learn fundamental coding concepts and write your first automation script!</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Indore Innovation Hub, South Tukoganj</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 18 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 10:00 AM – 12:30 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 8 seats</div>
+        <div class="card-footer">
+          <span class="price">₹ 749</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    
+
+      <!-- Card 3: AI & ML -->
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop" alt="AI for Beginners">
+        <span class="badge"><i class="fa-solid fa-brain"></i> AI & ML</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>AI for Beginners</h3>
+        <p class="desc">Understand AI and explore how it is used in everyday life.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Indore (Hobby Nook Studio)</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 15 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 3:00 PM – 5:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 15 seats</div>
+        <div class="card-footer">
+          <span class="price badge-pink">₹ 599</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: UI/UX Design -->
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=600&auto=format&fit=crop" alt="UI/UX Design">
+        <span class="badge"><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+      </div>
+      <div class="card-body">
+        <h3>UI/UX Design</h3>
+        <p class="desc">Learn the basics of designing user-friendly digital experiences.</p>
+        <div class="info"><i class="fa-solid fa-location-dot"></i> Indore (Hobby Nook Studio)</div>
+        <div class="info"><i class="fa-regular fa-calendar"></i> 20 Oct 2026</div>
+        <div class="info"><i class="fa-regular fa-clock"></i> 4:00 PM – 6:00 PM</div>
+        <div class="info"><i class="fa-solid fa-user-group"></i> 12 seats</div>
+        <div class="card-footer">
+          <span class="price badge-green">₹ 799</span>
+          <a class="book-btn" href="booking.html" target="_blank">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+<script>
+  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroDots = document.querySelectorAll(".hero-dot");
+  const heroArrows = document.querySelectorAll(".hero-arrow");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let currentHeroSlide = 0;
+
+  function showHeroSlide(index) {
+    currentHeroSlide = (index + heroSlides.length) % heroSlides.length;
+    heroSlides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === currentHeroSlide;
+      slide.classList.toggle("active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
+      heroDots[slideIndex].classList.toggle("active", isActive);
+      heroDots[slideIndex].setAttribute("aria-pressed", String(isActive));
+    });
+  }
+
+  heroDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => showHeroSlide(index));
+  });
+
+  heroArrows[0].addEventListener("click", () => showHeroSlide(currentHeroSlide - 1));
+  heroArrows[1].addEventListener("click", () => showHeroSlide(currentHeroSlide + 1));
+
+  document.querySelectorAll(".grid-container .card").forEach(card => {
+    const bookingLink = card.querySelector(".book-btn");
+    if (!bookingLink) return;
+
+    const cardDetails = [...card.querySelectorAll(".info")].map(item => item.textContent.trim());
+    const params = new URLSearchParams({
+      name: card.querySelector(".card-body h3").textContent.trim() || "Workshop",
+      description: card.querySelector(".desc").textContent.trim(),
+      image: card.querySelector(".card-image img").getAttribute("src"),
+      location: cardDetails[0] || "",
+      date: cardDetails[1] || "",
+      time: cardDetails[2] || "",
+      seats: (cardDetails[3] || "").match(/\d+/)?.[0] || "0",
+      price: (card.querySelector(".price").textContent || "").replace(/[^\d]/g, "")
+    });
+
+    bookingLink.href = `booking.html?${params.toString()}`;
+  });
+
+  if (!reducedMotion.matches) {
+    window.setInterval(() => {
+      showHeroSlide(currentHeroSlide + 1);
+    }, 4000);
+  }
+</script>
+</body>
+</html>

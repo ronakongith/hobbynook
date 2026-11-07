@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop Booking</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+
+  <div class="booking-container">
+
+    <!-- Left Side: Workshop Summary Card -->
+    <div class="card workshop-card">
+      <div class="workshop-header">
+        <div class="header-text">
+          <span class="badge">Creative Workshop</span>
+          <h2 id="workshop-name">Acrylic Painting</h2>
+          <p class="desc" id="workshop-description">Learn colour mixing, brush techniques and create your own artwork.</p>
+        </div>
+        <div class="workshop-image">
+          <img id="workshop-image" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=400&auto=format&fit=crop" alt="Acrylic Painting Artwork">
+        </div>
+      </div>
+
+      <div class="details-list">
+        <div class="info-item"><i class="fa-regular fa-calendar"></i> <span id="workshop-date">15 Oct 2026</span></div>
+        <div class="info-item"><i class="fa-regular fa-clock"></i> <span id="workshop-time">4:00 PM – 6:00 PM</span></div>
+        <div class="info-item"><i class="fa-solid fa-location-dot"></i> <span id="workshop-location">Krozzon, Vijay Nagar, Indore</span></div>
+        <div class="info-item"><i class="fa-solid fa-user-group"></i> <span id="workshop-seats-available">12 seats available</span></div>
+      </div>
+
+      <div class="fee-box">
+        <span class="fee-label">Workshop Fee</span>
+        <div class="fee-amount" id="workshop-fee">₹ 599</div>
+      </div>
+
+      <div class="included-section">
+        <h3>What's Included?</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> All required workshop materials</li>
+          <li><i class="fa-solid fa-check"></i> Step-by-step guidance from an expert</li>
+          <li><i class="fa-solid fa-check"></i> Take home what you create</li>
+        </ul>
+      </div>
+
+      <div class="doodle-note">
+        <i class="fa-regular fa-heart"></i>
+        <span>Make something memorable at your next workshop!</span>
+        <i class="fa-solid fa-flower"></i>
+      </div>
+    </div>
+
+    <!-- Right Side: Booking Details Form -->
+    <div class="card form-card">
+
+      <!-- Progress Stepper -->
+      <div class="stepper">
+        <div class="step active">
+          <span class="step-num">1</span>
+          <span class="step-label">Your Details</span>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <span class="step-label">Payment</span>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <span class="step-label">Confirmation</span>
+        </div>
+      </div>
+
+      <div class="form-header">
+        <h2>Booking Details</h2>
+        <p>Please fill in the details below to confirm your booking.</p>
+      </div>
+
+      <form>
+        <!-- Full Name -->
+        <div class="form-group">
+          <label>Full Name *</label>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+          <label>Email Address *</label>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <!-- Row: Seats & Special Request -->
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Number of Seats *</label>
+            <div class="input-wrapper select-wrapper">
+              <i class="fa-regular fa-user"></i>
+              <select id="seat-count" required>
+                <option value="1">1</option>
+              </select>
+              <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group half">
+            <label>Special Request (Optional)</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-comment"></i>
+              <input type="text" placeholder="Any specific requirements?">
+            </div>
+            <span class="hint">(e.g. accessibility, materials, etc.)</span>
+          </div>
+        </div>
+
+        <!-- Price Summary Box -->
+        <div class="price-summary">
+          <h4>Price Summary</h4>
+          <div class="summary-line">
+            <span>Workshop Fee (per seat)</span>
+            <span id="summary-fee">₹ 599</span>
+          </div>
+          <div class="summary-line">
+            <span>Number of Seats</span>
+            <span id="summary-seats">1</span>
+          </div>
+          <hr>
+          <div class="summary-total">
+            <span>Total</span>
+            <span class="total-amount" id="summary-total">₹ 599</span>
+          </div>
+        </div>
+
+        <!-- Checkbox Terms -->
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" checked required>
+          <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">
+          <i class="fa-regular fa-calendar-check"></i> Confirm Booking &rarr;
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <script>
+    const bookingParams = new URLSearchParams(window.location.search);
+    const workshopName = bookingParams.get("name");
+    const availableSeats = Number.parseInt(bookingParams.get("seats"), 10);
+    const workshopFee = Number.parseInt(bookingParams.get("price"), 10);
+    const seatSelect = document.getElementById("seat-count");
+    const totalSeats = Number.isInteger(availableSeats) && availableSeats >= 0 ? availableSeats : 12;
+    const feePerSeat = Number.isInteger(workshopFee) && workshopFee >= 0 ? workshopFee : 599;
+    const formatPrice = amount => `₹ ${amount.toLocaleString("en-IN")}`;
+
+    if (workshopName) {
+      document.title = `Booking - ${workshopName}`;
+      document.getElementById("workshop-name").textContent = workshopName;
+      document.getElementById("workshop-description").textContent =
+        bookingParams.get("description") || "";
+
+      const imageUrl = bookingParams.get("image");
+      if (imageUrl) {
+        const parsedImageUrl = new URL(imageUrl, document.baseURI);
+        if (["http:", "https:", "file:"].includes(parsedImageUrl.protocol)) {
+          const workshopImage = document.getElementById("workshop-image");
+          workshopImage.src = parsedImageUrl.href;
+          workshopImage.alt = workshopName;
+        }
+      }
+
+      document.getElementById("workshop-date").textContent = bookingParams.get("date") || "";
+      document.getElementById("workshop-time").textContent = bookingParams.get("time") || "";
+      document.getElementById("workshop-location").textContent = bookingParams.get("location") || "";
+    }
+
+    document.getElementById("workshop-seats-available").textContent =
+      `${totalSeats} ${totalSeats === 1 ? "seat" : "seats"} available`;
+    document.getElementById("workshop-fee").textContent = formatPrice(feePerSeat);
+    document.getElementById("summary-fee").textContent = formatPrice(feePerSeat);
+
+    seatSelect.replaceChildren();
+    for (let seat = 1; seat <= totalSeats; seat += 1) {
+      const option = document.createElement("option");
+      option.value = String(seat);
+      option.textContent = String(seat);
+      seatSelect.append(option);
+    }
+
+    if (totalSeats === 0) {
+      seatSelect.disabled = true;
+      document.querySelector(".submit-btn").disabled = true;
+    }
+
+    const updatePriceSummary = () => {
+      const selectedSeats = Number.parseInt(seatSelect.value, 10) || 0;
+      document.getElementById("summary-seats").textContent = String(selectedSeats);
+      document.getElementById("summary-total").textContent = formatPrice(feePerSeat * selectedSeats);
+    };
+
+    seatSelect.addEventListener("change", updatePriceSummary);
+    updatePriceSummary();
+  </script>
+</body>
+</html>
